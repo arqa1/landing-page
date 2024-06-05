@@ -1,0 +1,11 @@
+@mixin utility($property, $list, $class:null){
+    @if($class == null){
+        $class:$property
+    }
+
+    @each $key, $value in $list{
+        .#{$class}-#{$key} {
+            #{$property}: $value;
+        }
+    }
+}

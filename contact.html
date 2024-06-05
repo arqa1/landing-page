@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./scss/utils.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-white flex items-center h-12 py-3 px-4 md:h-20">
+        <button class="md:hidden"><i class="fas fa-bars"></i></button>
+        <div class="mx-auto md:mx-0 font-bold">کوئرا لیست</div>
+        <ul class="hidden md:flex ml-auto mr-4">
+            <li><a href="#">صفحه اصلی</a></li>
+            <li class="mx-4"><a href="#">درباره ما</a></li>
+            <li class="md:font-primary"><a href="#">ارتباط با ما</a></li>
+        </ul>
+        <div class="hidden md:flex items-center gap-2">
+            <button class="bg-primary text-white px-6 py-2 rounded-md">ورود به اپلیکیشن</button>
+            <button
+                class="px-4 bg-transparent w-10 h-10 border-color border rounded-md flex items-center justify-center"><i
+                    class="far fa-circle-half-stroke"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="p-4 flex flex-col items-center max-w-full mx-auto md:flex-row md:width-1070 md:py-10 md:px-8 md:justify-between md:items-stretch">
+            <div class="hidden md:flex md:flex-col md:justify-between md:border-l md:pl-8">
+                <div class="width-470 text-right">
+                    <h1 class="md:textSize-40 font-bold">تماس با من</h1>
+                    <p class="md:text-xl font-normal text-center mt-2 p-color text-right">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم<br/>
+                        بهت کمکی
+                        کنم.
+                    </p>
+               
+              
+                    <div class="mt-8">
+                        <div>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>09121234567
+                            </span>
+                        </div>
+                        <div class="mt-8">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <span>QueraList@gmail.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                    <div class="flex justify-between w-40 mt-auto">
+                        <div><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                        <div><a href="#" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></div>
+                        <div><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+            
+            </div>
+
+            <div class="md:hidden">
+                <h1 class="text-2xl font-bold text-center">تماس با ما</h1>
+                <p class="text-sm font-normal mt-4 text-center">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی
+                    کنم.
+                </p>
+            </div>
+
+            <div class="border border-card md:border-0 rounded-2xl mt-6 md:order-2 md:width-472">
+
+                <form action="" method="post" class="m-4">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between gap-4">
+                            <div>
+                                <label for="firstName" class="block text-xs font-semibold md:text-base">نام:</label>
+                                <input id="firstName" class="input-class width-140 mt-2" type="text"
+                                    placeholder="نام شما">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-xs font-semibold md:text-base">نام خانوادگی:</label>
+                                <input id="lastName" class="input-class width-140 mt-2" type="text"
+                                    placeholder="نام خانوادگی شما">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="emali" class="block text-xs font-semibold md:text-base">ایمیل:</label>
+                            <input id="email" class="input-class w-full mt-2" type="email" placeholder="ایمیل">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-semibold md:text-base">شماره تماس:</label>
+                            <input id="phone" class="input-class w-full mt-2" type="text" placeholder="شماره تماس شما">
+                        </div>
+                        <div>
+                            <label for="message" class="text-xs font-semibold md:text-base">متن پیام شما:</label>
+                            <textarea name="" id="message" placeholder="شماره تماس شما" rows="8"
+                                class="w-full p-card rounded-lg border-2 resize-none mt-2"></textarea>
+                        </div>
+
+                        <input type="submit"
+                            class="w-full bg-primary text-white mt-2 h-10 rounded-lg text-xs font-semibold md:text-base"
+                            value="ارسال پیام">
+                    </div>
+                </form>
+            </div>
+            <div class="flex justify-between w-full mt-4 md:hidden">
+                <div class="flex items-center gap-2 width-156 h-14 border border-card rounded-xl">
+                    <div class="w-8 h-8 bg-icon md:bg-inherit rounded-full flex items-center justify-center">
+                        <i class="icon-color fa fa-envelope-open md:icon-md-color" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="textSize-10 leading-4">
+                            ایمیل<br />QueraList@gmail.com
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 width-156 h-14 border border-card rounded-xl">
+                    <div class="w-8 h-8 bg-icon md:bg-inherit rounded-full flex items-center justify-center">
+                        <i class="icon-color fa fa-phone md:icon-md-color" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="textSize-10 leading-4">
+                            تلفن<br />09121234567
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex items-center justify-center gap-4 border border-card w-full mt-4 rounded-xl h-14 md:hidden">
+                <div class="w-8 h-8 bg-icon rounded-full flex items-center justify-center"><a href="#"
+                        target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="w-8 h-8 bg-icon rounded-full flex items-center justify-center"><a href="#"
+                        target="_blank"><i class="fa-brands fa-twitter-square"></i></a></div>
+                <div class="w-8 h-8 bg-icon rounded-full flex items-center justify-center"><a href="#"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="mt-12 flex items-center justify-center max-w-full mx-auto width-312 md:width-573">
+            <div class="h-px w-24 bg-line md:w-56"></div>
+            <h3 class="text-base font-semibold mx-2 md:text-xl">کوئرا لیست</h3>
+            <div class="h-px w-24 bg-line md:w-56"></div>
+        </div>
+        <div class="flex flex-col max-w-full mx-auto md:flex-row md:justify-between mt-6 width-328 md:w-full md:px-40">
+            <div class="width-328 md:order-2 md:flex md:flex-col md:justify-center">
+                <h3 class="text-sm font-bold md:text-base">با ما در ارتباط باش</h3>
+                <p class="text-xs font-normal mt-2 width-312 md:text-base">اگه میخوای اولین نفری باشی که از فیچرهای جدید
+                    و تخفیفات با خبر بشی.</p>
+                <div class="flex width-328">
+                    <form class="flex mt-8 w-full">
+                        <input class="border border-l-0 border-send grow h-12 border-r-input" type="email"
+                            placeholder="ایمیل">
+                        <button class="border border-r-0 border-send h-12 flex items-center border-r-button"><input
+                                class="border m-2 bg-primary text-white rounded-md text-sm w-16 h-9" type="submit"
+                                value="ارسال"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex justify-between mt-8 md:flex-col md:justify-center md:text-right">
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center gap-4 width-156 md:width-329 h-44 md:h-12 md:order-2 border border-card rounded-2xl text-center md:border-0">
+                    <div class="w-10 h-10 bg-icon md:bg-inherit rounded-full flex items-center justify-center">
+                        <i class="icon-color fa fa-map-marker md:icon-md-color" aria-hidden="true"></i>
+                    </div>
+                    <span class="textSize-10 font-normal md:text-sm w-32 md:w-72">آدرس دفتر مرکزی: پونک - خیابان اشرفی
+                        اصفهانی - خیابان صبحدل- بن بست شب بو</span>
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div
+                        class="flex items-center justify-center md:justify-normal gap-4 width-156 md:width-329 h-20 md:h-6 border border-card rounded-2xl text-center md:order-2 md:border-0 md:my-6">
+                        <div class="w-10 h-10 bg-icon md:bg-inherit rounded-full flex items-center justify-center">
+                            <i class="icon-color fa fa-phone md:icon-md-color" aria-hidden="true"></i>
+                        </div>
+                        <span class="textSize-10 font-normal md:text-sm">تلفن پشتیبانی<br class="md:hidden" /> ۴۴۴۴۵۵۶۶
+                            - ۰۲۱</span>
+                    </div>
+                    <div
+                        class="flex items-center justify-center md:justify-normal gap-4 width-156 md:width-329 h-20 md:h-6 border border-card rounded-2xl text-center md:border-0">
+                        <div class="w-10 h-10 bg-icon md:bg-inherit rounded-full flex items-center justify-center">
+                            <i class="icon-color fa fa-fax md:icon-md-color" aria-hidden="true"></i>
+                        </div>
+                        <span class="textSize-10 font-normal md:text-sm">فکس<br class="md:hidden" /> ۴۴۴۴۵۵۶۶ -
+                            ۰۲۱</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-10">
+            <p class="text-xs font-normal width-312 max-w-full mx-auto md:text-sm md:width-573">تمامی حقوق مادی و معنوی
+                این سایت متعلق به کوئرا لیست می‌باشد.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
